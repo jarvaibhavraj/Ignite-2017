@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5sp"
+    android:paddingEnd="5sp"
+    android:paddingStart="5sp"
+    android:paddingTop="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Featured"-->
+        <!--android:paddingLeft="5sp"-->
+        <!--android:fontFamily="sans-serif-condensed"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="20sp"-->
+        <!--android:id="@+id/textFeatured"/>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homePager"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:paddingTop="10sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homePager"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0sp" />
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Quick Links"-->
+        <!--android:paddingLeft="5sp"-->
+        <!--android:fontFamily="sans-serif-condensed"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="20sp"-->
+        <!--android:id="@+id/textQuickLinks"-->
+        <!--android:layout_below="@id/homePager"-->
+        <!--android:paddingTop="10sp"/>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabDots">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/card_view1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50sp"-->
+                <!--android:layout_margin="8sp">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/thumbnail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140sp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/events" />-->
+
+                <View
+                    android:id="@+id/topLine"
+                    android:layout_width="250sp"
+                    android:layout_height="1sp"
+                    android:layout_below="@id/event_details_description"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40sp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/home_event_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/topLine"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15sp"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:maxLines="3"
+                    android:padding="8sp"
+                    android:text="Event Categories"
+                    android:textColor="@color/colorPrimary2"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!--</RelativeLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/card_view2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50sp"-->
+                <!--android:layout_margin="8sp"-->
+                <!--android:layout_below="@id/card_view1">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/thumbnail2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140sp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/calender"/>-->
+
+                <View
+                    android:layout_width="250sp"
+                    android:layout_height="1sp"
+                    android:layout_below="@id/home_event_categories"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10sp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/home_event_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/home_event_categories"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:maxLines="3"
+                    android:padding="8sp"
+                    android:text="Schedule"
+                    android:textColor="@color/colorPrimary2"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!--</RelativeLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/card_view3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50sp"-->
+                <!--android:layout_margin="8sp"-->
+                <!--android:layout_below="@id/card_view2">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/thumbnail3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140sp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/plan" />-->
+
+                <View
+                    android:layout_width="250sp"
+                    android:layout_height="1sp"
+                    android:layout_below="@id/home_event_schedule"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10sp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/home_event_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_event_schedule"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:maxLines="3"
+                    android:padding="8sp"
+                    android:text="Plan my Ignite"
+                    android:textColor="@color/colorPrimary2"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="250sp"
+                    android:layout_height="1sp"
+                    android:layout_below="@id/home_event_plan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/colorPrimary" />
+                <!--</RelativeLayout>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

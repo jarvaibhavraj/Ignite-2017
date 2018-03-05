@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ignite_background"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="0.1"
+            android:background="@drawable/ignite_logo_title"
+            android:elevation="8dp"
+            app:titleTextColor="@color/colorTextHeadingLight" />
+
+        <!--
+         As the main content view, the view below consumes the entire
+                 space available using match_parent in both dimensions.
+        -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/gameLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/game_link5" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/textViewComingSoon"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/colorTransparentDark"-->
+                        <!--android:fontFamily="sans-serif"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Things With Wings is a gaming event by \nMr. Developer which is going to go live real soon. You'll be notified by the app on event commencement. Top scorers will be awarded lots of money.\n(Actually not that much)"-->
+                        <!--android:textColor="@color/colorTextHeadingLight"-->
+                        <!--android:textSize="16sp" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="150dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Total Pilots:  "-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="right"-->
+                            <!--android:textColor="@color/colorTextHeadingLight" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/number_pilots"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="23"-->
+                            <!--android:textColor="@color/colorTextHeadingLight" />-->
+                    <!--</LinearLayout>-->
+
+                </android.support.v7.widget.CardView>
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--app:cardBackgroundColor="#0000"-->
+                <!--app:cardCornerRadius="10dp"-->
+                <!--app:cardElevation="10dp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayoutHome1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    app:tabIndicatorHeight="0dp">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout="@layout/custom_tab_home" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout="@layout/custom_tab_home" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout="@layout/custom_tab_home" />
+
+                </android.support.design.widget.TabLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayoutHome2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    app:tabIndicatorHeight="0dp">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout="@layout/custom_tab_home" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout="@layout/custom_tab_home" />
+
+                </android.support.design.widget.TabLayout>
+                <!--</LinearLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@color/colorPrimaryLight"/>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/drawer_relative_layout"-->
+        <!--android:layout_width="240sp"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageViewDrawerImage"-->
+        <!--android:layout_width="240sp"-->
+        <!--android:layout_height="120sp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/ignite"/>-->
+        <!--
+         android:layout_gravity="start" tells DrawerLayout to treat
+                 this as a sliding drawer on the left side for left-to-right
+                 languages and on the right side for right-to-left languages.
+                 The drawer is given a fixed width in dp and extends the full height of
+                 the container. A solid background is used for contrast
+                 with the content view.
+        -->
+        <!--</RelativeLayout>-->
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:background="@color/colorPrimaryLight">-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/dummy_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ignite_logo_title_inverted"
+                app:tabIndicatorHeight="0dp">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/main_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ignite_logo_title_inverted"
+                app:tabIndicatorHeight="2dp">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@mipmap/old_categories" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@mipmap/old_schedule" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@mipmap/old_results" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@mipmap/old_wishlist" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@mipmap/old_mrdeveloper_white" />
+
+                <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:icon="@drawable/more" />-->
+
+            </android.support.design.widget.TabLayout>
+
+        </RelativeLayout>
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doingCoolStuff"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorTransparentPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/atom_icon" />
+
+        <TextView
+            android:id="@+id/textViewCoolStuff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="....INITIATING SELF-DESTRUCT SEQUENCE....\n5.. 4.. 3...."
+            android:textColor="@color/colorTextHeadingWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

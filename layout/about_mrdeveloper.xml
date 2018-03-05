@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imagehello"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/hello_world2" />-->
+
+    <TextView
+        android:id="@+id/textViewGreetings"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="GREETINGS FROM"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDetails"
+        android:textSize="15sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/aboutMrDeveloper"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/textViewGreetings"-->
+    <!--android:layout_marginTop="15sp"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/colorPrimaryDark"-->
+    <!--android:textSize="18sp" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMrDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGreetings"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageDev1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mrdeveloper_black" />
+
+        <TextView
+            android:id="@+id/textdev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDev1"
+            android:layout_centerHorizontal="true"
+            android:text="Mr. Developer"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextDetails"
+            android:textSize="20sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/textdev12"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/textdev1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:autoLink="all"-->
+        <!--android:text="www.mrdeveloper.xyz"-->
+        <!--android:textColorLink="@color/colorTextTab"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/colorTextDetails"-->
+        <!--android:textSize="12sp" />-->
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutMrDeveloper">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageDev2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignLeft="@+id/textdev2"
+                        android:layout_alignRight="@+id/textdev2"
+                        android:src="@mipmap/dev_anand" />
+
+                    <TextView
+                        android:id="@+id/textdev2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDev2"
+                        android:text="Vaibhav Anand"
+                        android:textColor="@color/colorTextDetails" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageDev4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignLeft="@+id/textdev4"
+                        android:layout_alignRight="@+id/textdev4"
+                        android:src="@mipmap/dev_lakshay" />
+
+                    <TextView
+                        android:id="@id/textdev4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDev4"
+                        android:text="Lakshay Raj"
+                        android:textColor="@color/colorTextDetails" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageDev3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignLeft="@+id/textdev3"
+                        android:layout_alignRight="@+id/textdev3"
+                        android:src="@mipmap/dev_raj" />
+
+                    <TextView
+                        android:id="@+id/textdev3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDev3"
+                        android:text="Vaibhav Singh"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextDetails" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linearLayout2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineDivider"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageDev5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignLeft="@+id/textdev5"
+                        android:layout_alignRight="@+id/textdev5"
+                        android:src="@mipmap/dev_ambuj" />
+
+                    <TextView
+                        android:id="@+id/textdev5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDev5"
+                        android:text="Ambuj Mittal"
+                        android:textColor="@color/colorTextDetails" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageDev6"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignLeft="@+id/textdev6"
+                        android:layout_alignRight="@+id/textdev6"
+                        android:src="@mipmap/dev_satyam" />
+
+                    <TextView
+                        android:id="@+id/textdev6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageDev6"
+                        android:text="Satyam Singh"
+                        android:textColor="@color/colorTextDetails" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_below="@id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewEmail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="0dp"
+        android:autoLink="all"
+        android:text="mrdeveloperxyz@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDetails"
+        android:textColorLink="@color/colorTextTab"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewEmail1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Reviews &amp; Suggestions"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextDetails"
+        android:textSize="15sp" />
+    <!--<TextView-->
+    <!--android:visibility="visible"-->
+    <!--android:id="@+id/textViewEmail1"-->
+    <!--android:autoLink="all"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/textdev1"-->
+    <!--android:text="www.mrdeveloper.xyz"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorTextDetails"-->
+    <!--android:textSize="12sp" />-->
+
+</RelativeLayout>

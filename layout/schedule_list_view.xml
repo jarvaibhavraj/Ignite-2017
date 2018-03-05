@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_details_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryLight">
+
+    <ListView
+        android:id="@+id/schedule_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewScheduleEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Schedule not finalized yet."
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScheduleNoInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="To know what you will be doing on 17th and 18th Feb, please connect to Internet."
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutEventDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/eventCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewEventPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b" />
+
+                <TextView
+                    android:id="@+id/event_details_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imageViewEventPhoto"
+                    android:background="@color/colorTransparentDark"
+                    android:paddingBottom="35dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Event Name"
+                    android:textColor="@color/colorTextHeadingLight"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/event_details_tagline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imageViewEventPhoto"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="@color/colorTextHeadingLight"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/buttonAddToWishlist"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@id/imageViewEventPhoto"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/heart" />
+            </RelativeLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorTransparentFull"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true" />-->
+
+        </android.support.v7.widget.CardView>
+
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignBottom="@id/imageViewEventPhoto"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/colorPrimaryDark" />-->
+
+        <ScrollView
+            android:id="@+id/event_details_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/eventCardView">
+
+            <LinearLayout
+                android:id="@+id/event_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorPrimaryDark" />-->
+
+                <TextView
+                    android:id="@+id/event_details_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="60dp"
+                    android:text="aldfkshjskldfsdkljfklsjdklfskdfskldfkljklsdjklfjskldjfljksdjfksdkfjhkljsdhfkjhskljdhfhslkdfkljsidpfuflekjskldjflk
+                js;ldf;s;dfjlksjdlfjlkjsdhfaldfkshjskldfsdkljfklsjdklfskdfskldfkljklsdjklfjskldjfljksdjfksdkfjhkljsdhfkjhskljdhfhslkdfkljsidpfu
+                flekjskldjflkjs;ldf;s;dfjlksjdlfjlkjsdhfaldfkshjskldfsdkljfklsjdklfskdfskldfkljklsdjklfjskldjfljksdjfksdkfjhkljsdhfkjhskljdhfhs
+                lkdfkljsidpfuflekjskldjflkjs;ldf;s;dfjlksjdlfjlkjsdhfaldfkshjskldfsdkljfklsjdklfskdfskldfkljklsdjklfjskldjfljksdjfksdkfjhkljsdh
+                fkjhskljdhfhslkdfkljsidpfuflekjskldjflkjs;ldf;s;dfjlksjdlfjlkjsdhfaldfkshjskldfsdkljfklsjdklfskdfskldfkljklsdjklfjskldjfljksdjf
+                ksdkfjhkljsdhfkjhskljdhfhslkdfkljsidpfuflekjskldjflkjs;ldf;s;dfjlksjdlfjlkjsdhf"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextDetails" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorPrimaryDark" />-->
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorHeight="0dp">
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:icon="@mipmap/date"
+                        android:text="Date" />
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:icon="@mipmap/time"
+                        android:text="Time" />
+                </android.support.design.widget.TabLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabSelectedTextColor="@color/colorTextAccent">
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabVenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:icon="@mipmap/venue"
+                        android:text="Venue" />
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabFee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:icon="@mipmap/fee"
+                        android:text="Fee" />
+                </android.support.design.widget.TabLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    app:tabIndicatorHeight="0dp">
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabPrize"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:icon="@mipmap/prize"
+                        android:text="Prize" />
+                </android.support.design.widget.TabLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true" />-->
+
+        <!--<android.support.v7.widget.AppCompatImageButton-->
+        <!--android:id="@+id/buttonAddToWishlist"-->
+        <!--style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/heart" />-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/buttonRegister"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Register" />&ndash;&gt;-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageViewWishlist"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/imageViewVenue"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="@color/colorPrimaryLight"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
+        <!--android:foreground="?android:attr/selectableItemBackground"-->
+        <!--android:src="@drawable/wishlist_plus" />-->
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="WISHLIST"/>-->
+    <ListView
+        android:id="@+id/listWishList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/listWishList"
+        android:background="@color/colorPrimary2" />
+
+    <TextView
+        android:id="@+id/textViewEmptyWishlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Aw. Too bad.\nLooks like you haven't added anything to your wishlist.\n\n\nAdd events to your wishlist by clicking the heart icon. This will keep you up to date with changes in those events."
+        android:textStyle="bold" />
+
+</RelativeLayout>

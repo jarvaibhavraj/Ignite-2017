@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/about_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/imageViewAbout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--app:cardElevation="20dp"-->
+    <!--app:cardCornerRadius="10dp"-->
+    <!--app:cardBackgroundColor="@color/colorPrimaryLight"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <ImageView
+        android:id="@+id/imageViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ignite_logo_medium"/>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/textViewAnnual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewAbout"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="sans-serif"
+        android:text="ANNUAL TECHNICAL FEST"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorTextHeading"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAnnual">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="30dp"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextDetails"
+            android:textSize="15sp" />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_result_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <ListView
+        android:id="@+id/result_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textViewResultNoInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="We searched everywhere, but we couldn't find the results.\n\n\nPlease check your internet connection."
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewResultNotAnnounced"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Our highly sophisticated algorithm hasn't made up its mind about the winners yet."
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

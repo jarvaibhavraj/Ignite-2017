@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/event_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="@dimen/rage_comic_name_margin_top" />
+    <TextView
+        android:id="@+id/event_details_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingLeft="6dp"/>
+    <TextView
+        android:id="@+id/event_details_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingLeft="6dp"/>
+    <TextView
+        android:id="@+id/event_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingLeft="6dp"/>
+    <TextView
+        android:id="@+id/event_details_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingLeft="6dp"/>
+    <TextView
+        android:id="@+id/event_details_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:paddingLeft="6dp"/>
+
+</LinearLayout>
